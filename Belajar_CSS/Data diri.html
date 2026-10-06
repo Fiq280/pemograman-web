@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Diri & Portofolio | nama lengkap</title>
+  <!-- Menghubungkan ke file CSS eksternal -->
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <!-- Tautan untuk aksesibilitas navigasi keyboard -->
+  <a class="lewati" href="#konten">Lewati ke konten</a>
+
+  <div class="halaman">
+    <!-- 1. Header (Identitas Diri) -->
+    <header class="header" id="beranda">
+      <p class="identitas">Data Diri & Portofolio Mahasiswa</p>
+      <h1>Taufiqurrohman Nur Pamuji</h1>
+      <p>Mahasiswa D4 Elektromedis - 1202405033 - Universitas Muhammadiyah PKU Surakarta</p>
+    </header>
+
+    <!-- 2. Navigasi (3 Tautan Navigasi) -->
+    <nav class="menu" aria-label="Navigasi Utama">
+      <a href="#beranda">Beranda</a>
+      <a href="#profil">Biodata</a>
+      <a href="#informasi">Informasi Diri</a>
+    </nav>
+
+    <!-- Konten Utama -->
+    <main id="konten" tabindex="-1">
+      
+      <!-- Section Biodata -->
+      <section id="profil" class="panel">
+        <h2>Biodata Singkat</h2>
+        <p>
+          Halo! Saya adalah Taufiqurrohman Nur Pamuji mahasiswa Program Studi D4 Elektromedis di Universitas Muhammadiyah PKU Surakarta. 
+          Saya memiliki ketertarikan pada pengembangan perangkat medis, pemrograman web, dan teknologi kesehatan.
+        </p>
+      </section>
+
+      <!-- Section Informasi Diri (3 Kartu Informasi) -->
+      <section id="informasi" class="panel">
+        <h2>Detail Informasi Diri</h2>
+        
+        <div class="kartu-grid">
+          <!-- Kartu 1 -->
+          <article class="kartu">
+            <h3>Pendidikan</h3>
+            <p><strong>Program Studi:</strong> D4 Elektromedis</p>
+            <p><strong>Kampus:</strong> UM PKU Surakarta</p>
+            <p><strong>Status:</strong> Mahasiswa Aktif</p>
+          </article>
+
+          <!-- Kartu 2 -->
+          <article class="kartu">
+            <h3>Keahlian & Minat</h3>
+            <p>• Pemrograman Web (HTML/CSS)</p>
+            <p>• Pengoperasian Alat Medis</p>
+            <p>• Dasar-Dasar Elektronika</p>
+          </article>
+
+          <!-- Kartu 3 -->
+          <article class="kartu">
+            <h3>Kontak & Sosial Media</h3>
+            <p><strong>Email:</strong> 1202405033@students.itspku.ac.id</p>
+            <p><strong>Lokasi:</strong> Surakarta, Jawa Tengah</p>
+            <p><strong>GitHub:</strong> github.com/fiq280</p>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 3. Footer -->
+    <footer class="footer">
+      <p>&copy; 2026 Taufiqurrohman Nur Pamuji - Universitas Muhammadiyah PKU Surakarta.</p>
+      <p>Praktikum Pemrograman Web - D4 Elektromedis</p>
+    </footer>
+  </div>
+
+</body>
+</html>
