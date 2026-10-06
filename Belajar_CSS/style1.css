@@ -1,4 +1,4 @@
-/* 1. Global & Reset Box Model */
+
 * {
   box-sizing: border-box;
 }
@@ -15,7 +15,7 @@ body {
   background-color: #edf2f7;
 }
 
-/* 2. Container Utama */
+
 .halaman {
   width: min(100% - 2rem, 1000px);
   margin: 1rem auto;
@@ -23,13 +23,27 @@ body {
   border: 1px solid #d4deea;
 }
 
-/* 3. Header */
 .header {
   padding: 2rem;
   color: #ffffff;
   background: #1b3c6b;
-  border-bottom: 5px solid #f7941d;
+  border-bottom: 5px solid #f7941d; 
+
+  display: flex;
+  align-items: center;  
 }
+
+.foto-profil {
+  width: 100px;          
+  height: 100px;          
+  object-fit: cover;      
+  border-radius: 50%;     
+  border: 3px solid #ffffff; 
+  display: block;         
+  margin-bottom: 1rem;    
+  flex-shrink: 0;
+}
+
 
 .identitas {
   margin-top: 0;
@@ -46,7 +60,7 @@ h2, h3 {
   color: #1b3c6b;
 }
 
-/* 4. Navigasi (Flexbox) */
+
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -67,13 +81,13 @@ h2, h3 {
   background: #1b3c6b;
 }
 
-/* Aksesibilitas Fokus Keyboard */
+
 a:focus-visible {
   outline: 3px solid #1b3c6b;
   outline-offset: 3px;
 }
 
-/* 5. Konten Utama & Layout Grid Kartu */
+
 main {
   padding: 1.5rem;
 }
@@ -110,7 +124,7 @@ main {
   margin: 0.25rem 0;
 }
 
-/* Aksesibilitas Tautan 'Lewati ke konten' */
+
 .lewati {
   position: absolute;
   left: -10000px;
@@ -125,7 +139,7 @@ main {
   z-index: 10;
 }
 
-/* 7. Responsif Tampilan Ponsel / Layar Kecil (Media Query) */
+
 @media (max-width: 600px) {
   .header {
     padding: 1.25rem;
@@ -140,6 +154,6 @@ main {
   }
 
   .kartu-grid {
-    grid-template-columns: 1fr; /* Menjadi 1 kolom di layar ponsel (375px) */
+    grid-template-columns: 1fr; 
   }
 }
